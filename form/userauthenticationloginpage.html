@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+    <link rel="stylesheet" href="../bootstrap.css" >
+    <script type='text/javascript' src='https://cdn.emailjs.com/sdk/2.2.4/email.min.js'></script>
+    <script src="bundle.js"></script>
+   <script type="module" src="userauthenticationloginpage.js"></script>
+
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>First Name:- </td>
+            <td colspan="2">
+                <input id="userfirstname" type="text" maxlength="20" name="firstname">
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name:- </td>
+            <td colspan="2">
+                <input id="userlastname" type="text" maxlength="20" name="lastname">
+            </td>
+        </tr>
+        <tr>
+            <td>Email Id:- </td>
+            <td colspan="2">
+                <input id="useremailid" type="email"  name="email-id" pattern="+@+.com"
+                       title="Please provide a valid email address">
+            </td>
+            <td><input id="sendotp" type="button" value="send OTP"></td>
+        </tr>
+
+        <tr>
+            <td> OTP:-</td>
+            <td colspan="2">
+                <input type="password" maxlength="6" minlength="6" id="verifyotp">
+            </td>
+        </tr>
+    </table>
+    <input type="submit" id="submitusersignupform" value="submit" >
+</form>
+
+</body>
+</html>
